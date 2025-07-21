@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cuisine collective</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <style>
+     
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      model-viewer {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>cuisine collective</h1>
+    <model-viewer
+      id = "kitchen"
+    
+      src="https://cdn.glitch.global/48b8a110-6b48-49f9-b4a6-f75c5907dfc8/cuisineIndustrielle.gltf?v=1666344790074"
+      camera-controls
+      //touch-action="none"
+      field-of-view="45deg" min-field-of-view="25deg" max-field-of-view="45deg"  
+      interpolation-decay="200"
+      //min-camera-orbit="auto auto 0%"
+      ar
+      ar-modes="scene-viewer webxr quick-look" 
+      shadow-intensity="1"
+      >
+                    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+
+    >  
+   </model-viewer> 
+  </body>
+</html>
